@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ФАНТАЗБАНК</title>
+<style>
+  /* Общие стили */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* градиент фиолетово-жёлтых оттенков */
+    color: #333;
+  }
+
+  /* Шапка с кнопками */
+  header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255,255,255,0.3);
+  }
+
+  /* Крупные кнопки */
+  .btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffd700; /* золотистый цвет для яркости */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #ffb700;
+  }
+
+  /* Основной блок */
+  main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Баннер с услугами */
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .service-item {
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1 1 200px;
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  /* Отзывы слева внизу */
+  .reviews {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: 250px;
+    background: rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 0.9em;
+  }
+
+  /* Подвал сайта */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255,255,255,0.3);
+    font-size: 0.8em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <button class="btn">Поддержка</button>
+  <button class="btn">Платежи</button>
+  <button class="btn">Телеграм-канал</button>
+</header>
+
+<main>
+  <!-- Простая форма регистрации -->
+  <section style="text-align:center; margin-top:30px;">
+    <h2>Регистрация</h2>
+    <form>
+      <input type="text" placeholder="Имя" required style="padding:10px; margin:5px; border-radius:5px; border:1px solid #ccc;">
+      <input type="email" placeholder="E-mail" required style="padding:10px; margin:5px; border-radius:5px; border:1px solid #ccc;">
+      <button type="submit" class="btn" style="margin-top:10px;">Зарегистрироваться</button>
+    </form>
+  </section>
+
+  <!-- Информационные блоки с услугами -->
+  <section class="services">
+    <div class="service-item">Вклады</div>
+    <div class="service-item">Кредиты</div>
+    <div class="service-item">Переводы</div>
+    <div class="service-item">Инвестиции</div>
+  </section>
+</main>
+
+<!-- Отзывы с левой снизу -->
+<div class="reviews">
+  <h3>Отзывы клиентов</h3>
+  <p>😊 Очень доволен! - Игорь</p>
+  <p>👍 Отличный сервис! - Мария</p>
+  <p>🙌 Рекомендую! - Алексей</p>
+  <!-- Можно добавить больше отзывов -->
+</div>
+
+<!-- Подпись в подвале сайта -->
+<footer>
+  <p>Этот сайт создан исключительно в образовательных и развлекательных целях.</p>
+</footer>
+
+</body>
+</html>
+<footer style="text-align: center; padding: 15px; background: rgba(255,255,255,0.3);">
+  <p style="margin-top:10px; font-weight:bold; font-size:1.2em;">ФАНТАЗБАНК</p>
+</footer>
+<!-- Надпись "Почему именно нас?" и список преимуществ -->
+<div style="background: rgba(255,255,255,0.8); padding: 20px; margin-top: 40px; border-radius: 12px; max-width: 900px; margin-left: auto; margin-right: auto;">
+  <h2 style="text-align: center;">Почему именно нас?</h2>
+  <ul style="list-style-type: disc; padding-left: 20px; font-size: 1.1em;">
+    <li>Мы самый безопасный банк!</li>
+    <li>У нас можно устроиться в сам наш банк</li>
+    <li>У нас удобный интерфейс</li>
+    <li>У нас нету мошенников</li>
+    <li>Мы лучший банк на страны такие как: Россия, Беларусь, Украина</li>
+  </ul>
+</div>
